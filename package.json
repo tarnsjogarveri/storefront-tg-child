@@ -1,0 +1,28 @@
+{
+  "name": "storefront-tg-child",
+  "version": "0.0.1",
+  "description": "Custom child theme under Storefront theme",
+  "author": "Tärnsjö Garveri AB",
+  "homepage": "https://github.com/tarnsjogarveri/storefront-tg-child",
+  "main": "style.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarnsjogarveri/storefront-tg-child.git"
+  },
+  "files": [
+    "functions.php",
+    "style.css"
+  ],
+  "scripts": {
+    "build": "npm run css",
+    "css": "node-sass --output-style compressed --include-path scss style.scss style.css",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.4.0",
+    "node": "^20.1.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22",
+    "npm": "^9.6.6"
+  }
+}
