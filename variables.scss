@@ -1,0 +1,17 @@
+/*
+    File with exported scss variables
+*/
+@import 'assets/scss/variables';
+
+:root{
+    --backgroundBody: #{$background-body};
+    --backgroundDark: #{$background-dark};
+    --backgroundLight: #{$background-light};
+    --colorBody: #{$color-body};
+    --colorH: #{$color-h};
+    --colorLinks: #{$color-links};
+    --colorBorder: #{$color-border};
+    --colorWoocommerce: #{$color-woocommerce};
+    --colorError: #{$error};
+
+}

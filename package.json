@@ -15,7 +15,9 @@
   ],
   "scripts": {
     "build": "npm run css",
-    "css": "node-sass --output-style compressed --include-path scss style.scss style.css",
+    "css": "npm run css-style; npm run css-variables",
+    "css-style": "node-sass --output-style compressed --include-path scss style.scss style.css",
+    "css-variables": "node-sass --output-style expanded --include-path scss variables.scss variables.css",
     "watch": "nodemon -e scss -x \"npm run build\""
   },
   "devDependencies": {
