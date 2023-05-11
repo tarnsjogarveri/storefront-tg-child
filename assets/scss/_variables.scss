@@ -1,0 +1,86 @@
+// Some common variables and mixins to get you started.
+// Variables allow you to re-use colors, sizes, and other values without repeating
+// yourself. This means that changes that should be small, such as tweaking the
+// coloring or the sizing, can be done in one place, not all over the stylesheet.
+
+$base-font:			'Lusitana', 'Times New Roman', Times, serif;
+$base-align:			center;
+$header-font:			'Libre Franklin', sans-serif;
+$header-align:			$base-align;
+$header-weight:			300;
+$link-block-title-font:			'Bodoni Moda', 'Times New Roman', Times, serif;
+$ms-base:			1em;
+$ms-ratio:			1.2;
+
+$logo-max-height:		200px;
+
+$step-ms:			1;
+$h1-ms:				4;
+$h2-ms:				$h1-ms - $step-ms;
+$h3-ms:				$h2-ms - $step-ms;
+$h4-ms:				$h3-ms - $step-ms;
+$h5-ms:				$h4-ms - $step-ms;
+$h6-ms:				$h5-ms - $step-ms;
+
+// base color scheme
+$background-body:   #f9f5f1;
+$background-dark:	#f3ebe2;
+$background-light:	#fff;
+$color-body:        #2b1f12;
+$color-h:			lighten( $color_body, 10% );
+$color-links:       #563d25;
+$color-border:      rgba(5, 5, 5, 0.05);
+$color-woocommerce: #78614f;
+$error:             #e2401c;
+$color-success:           $color_woocommerce;
+$color-info:              $color_woocommerce;
+
+$background-shop:	$background-light;
+
+$footer-back:		$background-body;
+$footer-color:		$color_links;//mix( $color_body, #333 );
+
+$button-font:		$header-font;
+$button-back:		$color_links;
+$button-color:		#fff;
+$button_alt-back:	$color_woocommerce;
+$button_alt-color:	$button-color;
+
+//line styles
+$line-thin:			1px solid #aaa;
+$line-header:		$line-thin;
+$line-footer:		$line-thin;
+
+// layout sizes
+$desktop:		1200px;
+$handheld:		600px;
+$container-width:	1550px;
+$menu_button_max-width:	120px;
+
+//default margins
+$margin-v:			40px;
+$margin-h:			$margin-v/2;
+
+$cover-height:		600px;
+$text-cover-height:	440px;
+$text-cover-height:	$margin-v/2;
+
+//corners
+$corner-radius:		3px;
+$button-radius:		99999px;
+
+// fontawesome
+$fa-font-path:      '../../../assets/fonts';
+
+// susy
+$susy: (
+	columns: 12,
+	gutters: 1,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+
+	use-custom: (
+		box-sizing: false
+	)
+);
